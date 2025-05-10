@@ -1,5 +1,11 @@
 function stringChop(str, size) {
-  // your code here
+   const res = [];
+  // Walk through the string in steps of `size`
+  for (let i = 0; i < str.length; i += size) {
+    // Take the substring of up to `size` characters
+    res.push(str.substr(i, size));
+  }
+  return res;
 }
 
 // Do not change the code below
