@@ -1,4 +1,5 @@
-function stringChop(str, size) {
+function stringChop(str, size) 
+  if (typeof str !== 'string') str = '';
    const res = [];
   // Walk through the string in steps of `size`
   for (let i = 0; i < str.length; i += size) {
